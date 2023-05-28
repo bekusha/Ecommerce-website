@@ -1,0 +1,16 @@
+.buttonContainer {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  border-radius: 3px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}

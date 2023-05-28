@@ -1,0 +1,43 @@
+.aboveFooterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 24px;
+}
+.aboveFooterImg {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.aboveFooterHeader {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+
+  color: #000000;
+}
+.goldText {
+  color: #d87d4a;
+}
+
+.aboveFooterParagraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  margin-bottom: 120px;
+  text-align: center;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}

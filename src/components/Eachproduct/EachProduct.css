@@ -1,0 +1,40 @@
+.eachProductContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+.eachProductImg {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.eachProductTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.eachProductParagraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.eachProductQuantityContainer {
+  display: flex;
+  align-items: center;
+}
+
+.eachProductCalculatorContainer {
+  display: flex;
+}

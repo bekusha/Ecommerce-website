@@ -1,0 +1,124 @@
+.homeNewProduct {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-image: url("https://res.cloudinary.com/dffpo6zsc/image/upload/v1685211338/mark2/image-header_lf6vdc.jpg");
+  background-size: cover;
+  background-position: left;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 108px;
+  color: white;
+}
+.homeNewProductTitle {
+  margin-top: 108px;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.homeNewProductHeader {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  /* or 111% */
+
+  text-align: center;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.homeNewProductParagraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+.homeOrangeProduct {
+  background: #d87d4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-bottom: 50px;
+  color: white;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.homeOrangeProductImg {
+  width: 150px;
+  margin-top: 37px;
+}
+.homeOrangeProductHeader {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  /* or 111% */
+
+  text-align: center;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.homeOrangeProductParagraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+.homeZx7Speaker {
+  background-image: url("https://res.cloudinary.com/dffpo6zsc/image/upload/v1685260203/mark2/mark1/xx59/zx9/zx7/image-speaker-zx7_dh5ibr.jpg");
+  background-size: cover;
+  padding-top: 101px;
+  margin: 24px;
+}
+.homeYx1Earphone {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.homeYx1EarphoneImg {
+  width: 100%;
+  height: 100%;
+}
+.homeYx1EarphoneBackground {
+  background: #f1f1f1;
+  margin-top: 24px;
+  padding-top: 41px;
+  padding-left: 24px;
+  padding-bottom: 41px;
+}
