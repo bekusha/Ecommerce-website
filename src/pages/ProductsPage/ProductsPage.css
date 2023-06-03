@@ -6,6 +6,7 @@
 .productsPageImg {
   width: 100%;
   margin-bottom: 40px;
+  border-radius: 8px;
 }
 .productsPageHeading {
   font-style: normal;

@@ -10,7 +10,7 @@ import { AppContext } from "../../App";
 const Home = () => {
   const { products } = useContext(AppContext);
   const product = products.map((product) => product);
-  console.log(product[0].id);
+
   return (
     <div className="homeContainer">
       <div className="homeNewProduct">

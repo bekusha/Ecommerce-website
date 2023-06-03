@@ -3,6 +3,7 @@ import "./ProductsPage.css";
 import { AppContext } from "../../App";
 import Button from "../../components/Button/Button";
 import { useParams } from "react-router";
+import Navigation from "../../components/Navigation/Navigation";
 
 const ProductsPage = () => {
   const { productId } = useParams();
@@ -58,6 +59,7 @@ const ProductsPage = () => {
         <img className="productsPageFirsSize" src={product.imagesArray[1]} />
         <img className="productsPageSecondSize" src={product.imagesArray[0]} />
       </div>
+      <Navigation />
     </div>
   );
 };

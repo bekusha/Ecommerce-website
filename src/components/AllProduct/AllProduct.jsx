@@ -5,6 +5,7 @@ import "./EachProduct.css";
 import AboveFooter from "../AboveFooter/AboveFooter";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import Navigation from "../Navigation/Navigation";
 
 const EachProduct = () => {
   const { products } = useContext(AppContext);
@@ -32,6 +33,7 @@ const EachProduct = () => {
           </Link>
         </div>
       ))}
+      <Navigation />
       <AboveFooter />
     </div>
   );

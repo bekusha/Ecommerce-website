@@ -7,15 +7,25 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 32px 24px 32px 24px;
+  position: relative;
 }
-.cartContainer {
+.cart {
   position: absolute;
-  background-color: gray;
-  width: 327px;
-  height: 488px;
-  top: 50px;
-  left: 50px;
+  background-color: white;
+  margin-left: 24px;
+  margin-right: 24px;
+  top: 0;
+  z-index: 999;
+  width: 80%;
 }
-.off {
+.navOff {
   display: none;
+}
+.navOpen {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px 10px #888888;
 }
