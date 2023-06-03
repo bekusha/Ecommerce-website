@@ -1,0 +1,100 @@
+.productsPageContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.productsPageImg {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.productsPageHeading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.productsPageParagraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+  margin-bottom: 24px;
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.productsPagePrice {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  margin-bottom: 31px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.productsPageCalculatorContainer {
+  display: flex;
+  justify-content: space-around;
+
+  gap: 16px;
+}
+.productsPagePlusMinus {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 15px;
+}
+.productsPageFeatures {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.features {
+  margin-top: 88px;
+}
+.ulOrange {
+  color: #d87d4a;
+}
+.productsPageList {
+  list-style: none;
+}
+.productsPageListInner {
+  display: flex;
+  gap: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.productsPageImagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.productsPageFirstSize {
+  width: 100%;
+}
