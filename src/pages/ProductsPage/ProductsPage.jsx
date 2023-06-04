@@ -8,26 +8,50 @@ import Navigation from "../../components/Navigation/Navigation";
 const ProductsPage = () => {
   const { productId } = useParams();
   console.log(productId);
-  const { products, quantity, setQuantity } = useContext(AppContext);
+  const { products, cartItems, setCartItems, quantity, setQuantity } =
+    useContext(AppContext);
   const product = products.find(
     (product) => product.id === parseInt(productId)
   );
-
-  console.log(product);
+  const handleDecrement = () => {
+    if (quantity !== 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+  const handleIncrement = () => {
+    setQuantity(quantity + 1);
+  };
+  const handleAddToCart = () => {
+    const newItem = {
+      id: product.id,
+      title: product.title,
+      price: product.price,
+      quantity: quantity,
+    };
+    setCartItems([...cartItems, newItem]);
+    console.log(cartItems);
+  };
 
   return (
     <div className="productsPageContainer">
       <img className="productsPageImg" src={product.img} alt={product.title} />
       <h1 className="productsPageHeading">{product.title}</h1>
       <p className="productsPageParagraph">{product.description}</p>
-      <div className="productsPagePrice">{product.price}</div>
+      <div className="productsPagePrice">{product.price * quantity}</div>
       <div className="productsPageCalculatorContainer">
         <div className="productsPagePlusMinus">
-          <div className="productsPageMinus">-</div>
+          <div onClick={handleDecrement} className="productsPageMinus">
+            -
+          </div>
           <div className="productsPageQuantity">{quantity}</div>
-          <div className="productsPagePlus">+</div>
+          <div onClick={handleIncrement} className="productsPagePlus">
+            +
+          </div>
         </div>
-        <Button background={"#D87D4A"} title={"ADD TO CART"} width={160} />
+        <div onClick={handleAddToCart}>
+          {" "}
+          <Button background={"#D87D4A"} title={"ADD TO CART"} width={160} />
+        </div>
       </div>
       <h1 className="features">FEATURES</h1>
       <div className="productsPageFeatures">{product.features}</div>
