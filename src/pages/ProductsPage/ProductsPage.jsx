@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./ProductsPage.css";
-import { AppContext } from "../../App";
+import { AppContext } from "../../main";
 import Button from "../../components/Button/Button";
 import { useParams } from "react-router";
 import Navigation from "../../components/Navigation/Navigation";
@@ -26,18 +26,19 @@ const ProductsPage = () => {
       id: product.id,
       title: product.title,
       price: product.price,
+      img: product.img,
       quantity: quantity,
     };
     setCartItems([...cartItems, newItem]);
-    console.log(cartItems);
   };
+  console.log(cartItems);
 
   return (
     <div className="productsPageContainer">
       <img className="productsPageImg" src={product.img} alt={product.title} />
       <h1 className="productsPageHeading">{product.title}</h1>
       <p className="productsPageParagraph">{product.description}</p>
-      <div className="productsPagePrice">{product.price * quantity}</div>
+      <div className="productsPagePrice">${product.price * quantity}</div>
       <div className="productsPageCalculatorContainer">
         <div className="productsPagePlusMinus">
           <div onClick={handleDecrement} className="productsPageMinus">

@@ -6,7 +6,7 @@ import Navigation from "../../components/Navigation/Navigation";
 import AboveFooter from "../../components/AboveFooter/AboveFooter";
 import zx9 from "./zx9.svg";
 import { useContext } from "react";
-import { AppContext } from "../../App";
+import { AppContext } from "../../main";
 const Home = () => {
   const { products } = useContext(AppContext);
   const product = products.map((product) => product);
@@ -61,16 +61,19 @@ const Home = () => {
           src="https://res.cloudinary.com/dffpo6zsc/image/upload/v1685205354/mark2/mark1/xx59/zx9/zx7/yx1/image-gallery-2_xquoyn.jpg"
         />
         <div className="homeYx1EarphoneBackground">
-          <h1>YX1 EARPHONE</h1>{" "}
+          <h1 className="homeYx1EarphoneHeader">YX1 EARPHONE</h1>{" "}
           <Link to={`/product/${product[5].id}`}>
             {" "}
-            <Button
-              width={160}
-              title={"SEE PRODUCT"}
-              background={"transparent"}
-              color={"black"}
-              border={"solid"}
-            />
+            <div className="homeYx1EarphoneButton">
+              {" "}
+              <Button
+                width={160}
+                title={"SEE PRODUCT"}
+                background={"transparent"}
+                color={"black"}
+                border={"solid"}
+              />
+            </div>
           </Link>
         </div>
       </div>

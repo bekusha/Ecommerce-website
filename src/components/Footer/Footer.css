@@ -74,3 +74,25 @@
 .footerSocButton:hover {
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .footerContainer {
+    text-align: left;
+  }
+  .navBar {
+    flex-direction: row;
+    gap: 34px;
+  }
+  .footerLogoContainer {
+    justify-content: flex-start;
+    margin-bottom: 22px;
+  }
+  .footerParagraph {
+    text-align: left;
+  }
+  .footers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80x;
+  }
+}

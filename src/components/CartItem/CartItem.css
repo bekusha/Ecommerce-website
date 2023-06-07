@@ -1,3 +1,87 @@
 .cartItemContainer {
   display: flex;
+  margin: 24px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cartItemImg {
+  width: 64px;
+  height: 64px;
+}
+.cartItemTitlePrice {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.cartItemCalculator {
+  display: flex;
+  gap: 11px;
+}
+.cartItemTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+
+  color: #000000;
+}
+.cartItemPrice {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+  /* identical to box height, or 179% */
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.cartItemMinus {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+.cartItemQuantity {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.cartItemPlus {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+  opacity: 0.25;
 }

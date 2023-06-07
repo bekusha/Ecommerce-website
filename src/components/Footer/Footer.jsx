@@ -28,11 +28,15 @@ const Footer = () => {
         helping you get the most out of personal audio. Come and visit our demo
         facility - we’re open 7 days a week.
       </p>
-      <div className="footerCopyright">Copyright 2021. All Rights Reserved</div>
-      <div className="footerSoc">
-        <img className="footerSocButton" src={f} />
-        <img className="footerSocButton" src={t} />
-        <img className="footerSocButton" src={i} />
+      <div className="footers">
+        <div className="footerCopyright">
+          Copyright 2021. All Rights Reserved
+        </div>
+        <div className="footerSoc">
+          <img className="footerSocButton" src={f} />
+          <img className="footerSocButton" src={t} />
+          <img className="footerSocButton" src={i} />
+        </div>
       </div>
     </div>
   );

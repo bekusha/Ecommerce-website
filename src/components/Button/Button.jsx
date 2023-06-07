@@ -1,5 +1,7 @@
 import React from "react";
 import "./Button.css";
+import { AppContext } from "../../main";
+import { useContext } from "react";
 const Button = (props) => {
   return (
     <div

@@ -1,21 +1,43 @@
 import React from "react";
 import "./CartItem.css";
+import { AppContext } from "../../main";
 import { useContext } from "react";
-import { AppContext } from "../../App";
+
 const CartItem = () => {
+  const products = useContext(AppContext);
+
+  console.log(products);
+  const handleIncrement = () => {
+    products.setQuantity(products.quantity + 1);
+  };
+  const handleDecrement = () => {
+    if (products.quantity !== 1) {
+      products.setQuantity(products.quantity - 1);
+    }
+  };
   return (
-    <div className="cartItemContainer">
-      <img className="cartItemImg" />
-      <div className="cartItemTitlePrice">
-        <div className="cartItemTitle">title</div>
-        <div className="cartItemPrice">price</div>
-      </div>
-      <div className="cartItemCalculator">
-        <div className="cartItemMinus">-</div>
-        <div className="cartItemQuantity">1</div>
-        <div className="cartItemPlus">+</div>
-      </div>
-    </div>
+    <>
+      {products.cartItems.map((cartItem) => {
+        return (
+          <div key={cartItem.id} className="cartItemContainer">
+            <img className="cartItemImg" src={cartItem.img} />
+            <div className="cartItemTitlePrice">
+              <div className="cartItemTitle">{cartItem.title}</div>
+              <div className="cartItemPrice">${cartItem.price}</div>
+            </div>
+            <div className="cartItemCalculator">
+              <div onClick={handleDecrement} className="cartItemMinus">
+                -
+              </div>
+              <div className="cartItemQuantity">{products.quantity}</div>
+              <div onClick={handleIncrement} className="cartItemPlus">
+                +
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </>
   );
 };
 

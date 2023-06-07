@@ -41,3 +41,28 @@
   mix-blend-mode: normal;
   opacity: 0.5;
 }
+@media (min-width: 768px) {
+  .aboveFooterImg {
+    width: 689px;
+    height: 300px;
+  }
+  .aboveFooterParagraph {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .aboveFooterHeader {
+    margin-left: 90px;
+    margin-right: 90px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    /* or 110% */
+
+    text-align: center;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+}

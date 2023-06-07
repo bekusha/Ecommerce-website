@@ -14,9 +14,26 @@ body {
   background-color: white;
   margin-left: 24px;
   margin-right: 24px;
-  top: 0;
+  top: 70px;
   z-index: 999;
   width: 80%;
+  height: 488px;
+  border-radius: 8px;
+}
+.cartInfoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.cartQuantity {
+  margin-left: 28px;
+  margin-top: 32px;
+}
+.cartRemoveButton {
+  margin-right: 28px;
+  margin-top: 32px;
+}
+.cartRemoveButton:hover {
+  color: red;
 }
 .navOff {
   display: none;

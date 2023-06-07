@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Button from "../Button/Button";
-import { AppContext } from "../../App";
+import { AppContext } from "../../main";
 import "./EachProduct.css";
 import AboveFooter from "../AboveFooter/AboveFooter";
 import { useParams } from "react-router";
