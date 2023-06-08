@@ -1,3 +1,6 @@
+img {
+  border-radius: 10px;
+}
 .productsPageContainer {
   display: flex;
   flex-direction: column;
@@ -98,4 +101,73 @@
 }
 .productsPageFirstSize {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .productPageInfoSide {
+    display: flex;
+    flex-direction: row;
+  }
+  .productsPageImg {
+    width: 40%;
+  }
+  .productsPageHeading {
+    margin-left: 69px;
+    margin-right: 35px;
+  }
+  .productsPageParagraph {
+    margin-left: 69px;
+    margin-right: 34px;
+  }
+  .productsPageCalculatorContainer {
+    justify-content: flex-end;
+  }
+  .productsPagePrice {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .productsPageList {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 120px;
+  }
+  .listDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .inTheBox {
+    margin-right: 100px;
+  }
+  .productsPageFeatures {
+    margin-bottom: 120px;
+  }
+  .leftSideImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .productsPageImagesContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  .productsPageFirsSize {
+    object-fit: contain;
+    width: 80%;
+  }
+  .productsPageSecondSize {
+    object-fit: none;
+    height: 368px;
+  }
+  .productsPageSecondSize {
+    width: 50%;
+  }
+  .productsPageAlsoLike {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

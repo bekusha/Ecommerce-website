@@ -5,6 +5,14 @@ const AboveFooter = () => {
   return (
     <div className="aboveFooterContainer">
       <img src={boy} className="aboveFooterImg" />
+      <img
+        className="aboveFooterImgTablet"
+        src="https://res.cloudinary.com/dffpo6zsc/image/upload/v1686228514/mark2/image-best-gear_c2fzqq.jpg"
+      />
+      <img
+        className="aboveFooterImgDesktop"
+        src="https://res.cloudinary.com/dffpo6zsc/image/upload/v1686243093/mark2/image-best-gear_vscese.jpg"
+      />
       <h1 className="aboveFooterHeader">
         BRINGING YOU THE <span className="goldText">BEST</span> AUDIO GEAR
       </h1>

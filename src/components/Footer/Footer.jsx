@@ -4,6 +4,7 @@ import line from "../../assets/Rectangle.svg";
 import f from "../../assets/Path.svg";
 import t from "../../assets/Path (1).svg";
 import i from "../../assets/Shape.svg";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 const Footer = () => {
   return (
@@ -14,13 +15,25 @@ const Footer = () => {
       </div>
 
       <ul className="navBar">
-        <li className="navBarInner">Home</li>
+        <Link to={"/"}>
+          {" "}
+          <li className="navBarInner">Home</li>
+        </Link>
 
-        <li className="navBarInner">HEADPHONES</li>
+        <Link to={"/allproducts/Headphones"}>
+          {" "}
+          <li className="navBarInner">HEADPHONES</li>
+        </Link>
 
-        <li className="navBarInner">SPEAKERS</li>
+        <Link to={"/allproducts/Speakers"}>
+          {" "}
+          <li className="navBarInner">SPEAKERS</li>
+        </Link>
 
-        <li className="navBarInner">EARPHONES</li>
+        <Link to={"/allproducts/Earphones"}>
+          {" "}
+          <li className="navBarInner">EARPHONES</li>
+        </Link>
       </ul>
       <p className="footerParagraph">
         Audiophile is an all in one stop to fulfill your audio needs. We're a

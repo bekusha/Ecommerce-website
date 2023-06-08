@@ -1,0 +1,37 @@
+.alsoLikeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.alsoLikeImgContainer {
+  background-color: #f1f1f1;
+  margin-top: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.alsoLikeImg {
+  width: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.alsoLikeTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+  letter-spacing: 1.71429px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .alsoLikeContainer {
+  }
+}

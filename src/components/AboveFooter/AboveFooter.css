@@ -11,6 +11,9 @@
   border-radius: 10px;
   margin-bottom: 40px;
 }
+.aboveFooterImgDesktop {
+  display: none;
+}
 .aboveFooterHeader {
   font-style: normal;
   font-weight: 700;
@@ -41,10 +44,19 @@
   mix-blend-mode: normal;
   opacity: 0.5;
 }
+.aboveFooterImgTablet {
+  display: none;
+}
 @media (min-width: 768px) {
   .aboveFooterImg {
-    width: 689px;
+    display: none;
+  }
+  .aboveFooterImgTablet {
+    display: block;
     height: 300px;
+  }
+  .aboveFooterImgDesktop {
+    display: none;
   }
   .aboveFooterParagraph {
     margin-left: 80px;
@@ -64,5 +76,13 @@
     text-transform: uppercase;
 
     color: #000000;
+  }
+}
+@media (min-width: 1440px) {
+  .aboveFooterImgTablet {
+    display: none;
+  }
+  .aboveFooterImgDesktop {
+    display: block;
   }
 }

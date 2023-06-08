@@ -35,3 +35,41 @@
   opacity: 0.5;
   margin-bottom: 24px;
 }
+
+@media (min-width: 768px) {
+  .eachProductImg {
+    width: 689px;
+    height: 352px;
+    object-fit: contain;
+  }
+  .eachProductTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    /* or 110% */
+
+    text-align: center;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    padding-left: 90px;
+    padding-right: 90px;
+    color: #000000;
+  }
+  .eachProductParagraph {
+    padding-left: 90px;
+    padding-right: 90px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    margin-bottom: 24px;
+    text-align: center;
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}

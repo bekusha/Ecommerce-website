@@ -15,7 +15,7 @@
   top: -50px;
 }
 .categoryHeader {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .categoryButton {
   margin-top: 17px;
@@ -41,5 +41,18 @@
   .categoryContainer {
     margin-left: 5px;
     margin-right: 5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .categoryContainer {
+    width: 300px;
+    height: 180px;
+  }
+  .categoryImg {
+    width: 122px;
+  }
+  .categoryHeader {
+    margin-top: 95px;
   }
 }

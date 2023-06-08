@@ -4,7 +4,7 @@ import { AppContext } from "../../main";
 import Button from "../../components/Button/Button";
 import { useParams } from "react-router";
 import Navigation from "../../components/Navigation/Navigation";
-
+import AlsoLike from "../../components/AlsoLike/AlsoLike";
 const ProductsPage = () => {
   const { productId } = useParams();
   console.log(productId);
@@ -35,10 +35,19 @@ const ProductsPage = () => {
 
   return (
     <div className="productsPageContainer">
-      <img className="productsPageImg" src={product.img} alt={product.title} />
-      <h1 className="productsPageHeading">{product.title}</h1>
-      <p className="productsPageParagraph">{product.description}</p>
+      <div className="productPageInfoSide">
+        <img
+          className="productsPageImg"
+          src={product.img}
+          alt={product.title}
+        />
+        <div>
+          <h1 className="productsPageHeading">{product.title}</h1>
+          <p className="productsPageParagraph">{product.description}</p>
+        </div>
+      </div>
       <div className="productsPagePrice">${product.price * quantity}</div>
+
       <div className="productsPageCalculatorContainer">
         <div className="productsPagePlusMinus">
           <div onClick={handleDecrement} className="productsPageMinus">
@@ -57,32 +66,44 @@ const ProductsPage = () => {
       <h1 className="features">FEATURES</h1>
       <div className="productsPageFeatures">{product.features}</div>
       <ul className="productsPageList">
-        <h1>IN THE BOX</h1>
-        <li className="productsPageListInner">
-          <div className="ulOrange">1x</div>
-          Headphone Unit
-        </li>
-        <li className="productsPageListInner">
-          <div className="ulOrange">1x</div>
-          Replacement Earcups
-        </li>
-        <li className="productsPageListInner">
-          <div className="ulOrange">1x</div>
-          User Manual
-        </li>
-        <li className="productsPageListInner">
-          <div className="ulOrange">1x</div>
-          3.5mm 5m Audio Cable
-        </li>
-        <li className="productsPageListInner">
-          <div className="ulOrange">1x</div>
-          Travel Bag
-        </li>
+        <h1 className="inTheBox"> IN THE BOX</h1>
+        <div className="listDiv">
+          <li className="productsPageListInner">
+            <div className="ulOrange">1x</div>
+            Headphone Unit
+          </li>
+          <li className="productsPageListInner">
+            <div className="ulOrange">1x</div>
+            Replacement Earcups
+          </li>
+          <li className="productsPageListInner">
+            <div className="ulOrange">1x</div>
+            User Manual
+          </li>
+          <li className="productsPageListInner">
+            <div className="ulOrange">1x</div>
+            3.5mm 5m Audio Cable
+          </li>
+          <li className="productsPageListInner">
+            <div className="ulOrange">1x</div>
+            Travel Bag
+          </li>
+        </div>
       </ul>
       <div className="productsPageImagesContainer">
-        <img className="productsPageFirsSize" src={product.imagesArray[2]} />
-        <img className="productsPageFirsSize" src={product.imagesArray[1]} />
+        <div className="leftSideImages">
+          <img className="productsPageFirsSize" src={product.imagesArray[2]} />
+          <img
+            style={{ marginTop: "11px" }}
+            className="productsPageFirsSize"
+            src={product.imagesArray[1]}
+          />
+        </div>
         <img className="productsPageSecondSize" src={product.imagesArray[0]} />
+      </div>
+      <div className="productsPageAlsoLike">
+        <h1>YOU MAY ALSO LIKE</h1>
+        <AlsoLike />
       </div>
       <Navigation />
     </div>
