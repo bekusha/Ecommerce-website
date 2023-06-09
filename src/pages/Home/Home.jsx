@@ -13,22 +13,54 @@ const Home = () => {
 
   return (
     <div className="homeContainer">
+      <div className="homeNewProduct">
+        <img
+          className="homeNewProductImg"
+          src="https://res.cloudinary.com/dffpo6zsc/image/upload/v1685211338/mark2/image-header_lf6vdc.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dffpo6zsc/image/upload/v1686166012/mark2/image-hero_namdn6.jpg"
+          className="homeNewProductTablet"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dffpo6zsc/image/upload/v1686233584/mark2/image-hero_vdz8rb.jpg"
+          className="homeNewProductDesktop"
+          alt=""
+        />
+        <div className="homeNewProductInfo">
+          <div className="homeNewProductTitle">NEW PRODUCT</div>
+          <h1 className="homeNewProductHeader">XX99 Mark II HeadphoneS</h1>
+          <p className="homeNewProductParagraph">
+            Experience natural, lifelike audio and exceptional build quality
+            made for the passionate music enthusiast.
+          </p>
+          <Link to={`/product/${product[0].id}`}>
+            {" "}
+            <Button title={"SEE PRODUCT"} width={160} background={"#D87D4A"} />
+          </Link>
+        </div>
+      </div>
       <div className="homeNavCont">
         <Navigation />
       </div>
       <div className="homeOrangeProduct">
-        <img className="homeOrangeProductImg" src={zx9} />
+        <img className="homeOrangeProductImg" src={zx9} alt="" />
+
         <div className="homeOrangeProductInfoContainer">
           <h1 className="homeOrangeProductHeader">{product[3].title}</h1>
           <p className="homeOrangeProductParagraph">{product[3].description}</p>
           <Link to={`/product/${product[3].id}`}>
             {" "}
-            <Button
-              background={"black"}
-              color={"white"}
-              title={"SEE PRODUCT"}
-              width={160}
-            />
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <Button
+                background={"black"}
+                color={"white"}
+                title={"SEE PRODUCT"}
+                width={160}
+              />
+            </div>
           </Link>
         </div>
       </div>

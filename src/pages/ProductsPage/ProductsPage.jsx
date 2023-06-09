@@ -44,25 +44,29 @@ const ProductsPage = () => {
         <div>
           <h1 className="productsPageHeading">{product.title}</h1>
           <p className="productsPageParagraph">{product.description}</p>
+          <div className="productsPagePrice">${product.price * quantity}</div>
+          <div className="productsPageCalculatorContainer">
+            <div className="productsPagePlusMinus">
+              <div onClick={handleDecrement} className="productsPageMinus">
+                -
+              </div>
+              <div className="productsPageQuantity">{quantity}</div>
+              <div onClick={handleIncrement} className="productsPagePlus">
+                +
+              </div>
+            </div>
+            <div onClick={handleAddToCart}>
+              {" "}
+              <Button
+                background={"#D87D4A"}
+                title={"ADD TO CART"}
+                width={160}
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <div className="productsPagePrice">${product.price * quantity}</div>
 
-      <div className="productsPageCalculatorContainer">
-        <div className="productsPagePlusMinus">
-          <div onClick={handleDecrement} className="productsPageMinus">
-            -
-          </div>
-          <div className="productsPageQuantity">{quantity}</div>
-          <div onClick={handleIncrement} className="productsPagePlus">
-            +
-          </div>
-        </div>
-        <div onClick={handleAddToCart}>
-          {" "}
-          <Button background={"#D87D4A"} title={"ADD TO CART"} width={160} />
-        </div>
-      </div>
       <h1 className="features">FEATURES</h1>
       <div className="productsPageFeatures">{product.features}</div>
       <ul className="productsPageList">
@@ -101,8 +105,8 @@ const ProductsPage = () => {
         </div>
         <img className="productsPageSecondSize" src={product.imagesArray[0]} />
       </div>
+      <h1>YOU MAY ALSO LIKE</h1>
       <div className="productsPageAlsoLike">
-        <h1>YOU MAY ALSO LIKE</h1>
         <AlsoLike />
       </div>
       <Navigation />

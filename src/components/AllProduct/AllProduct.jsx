@@ -26,14 +26,24 @@ const EachProduct = () => {
             src={product.img}
             alt={product.title}
           />
-          <h1 className="eachProductTitle">{product.title}</h1>
-          <p className="eachProductParagraph">{product.description}</p>
-          <Link to={`/product/${product.id}`}>
-            <Button width={160} background={"#D87D4A"} title={"SEE PRODUCT"} />
-          </Link>
+          <div>
+            <div className="eachProductInfo">
+              <h1 className="eachProductTitle">{product.title}</h1>
+              <p className="eachProductParagraph">{product.description}</p>
+              <div className="eachProductButtonContainer">
+                <Link to={`/product/${product.id}`}>
+                  <Button
+                    width={160}
+                    background={"#D87D4A"}
+                    title={"SEE PRODUCT"}
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
-      <Navigation />
+      <Navigation />a
       <AboveFooter />
     </div>
   );

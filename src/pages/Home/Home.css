@@ -1,29 +1,30 @@
 .homeNewProduct {
+  padding-bottom: 112px;
+  padding-top: 126px;
   display: flex;
   flex-direction: column;
-  text-align: center;
   align-items: center;
+  justify-content: center;
+  max-height: 400px;
   position: relative;
-  padding-bottom: 108px;
-  color: white;
 }
-
+.homeNewProductDesktop {
+  display: none;
+}
 .homeNewProductImg {
   position: absolute;
-
   width: 100%;
-  z-index: -999;
+  height: 600px;
+  z-index: -2;
 }
-.homeNavCont {
-  margin-top: 50px;
+.homeNewProductInfo {
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.homeNewProductImgTablet {
-  display: none;
-}
-.homeNewProductImgDesktop {
-  display: none;
-}
-.homeNewPoductTitle {
+
+.homeNewProductTitle {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -31,7 +32,7 @@
   text-align: center;
   letter-spacing: 10px;
   text-transform: uppercase;
-  margin-top: 108px;
+
   color: #ffffff;
 
   mix-blend-mode: normal;
@@ -47,7 +48,7 @@
   text-align: center;
   letter-spacing: 1.28571px;
   text-transform: uppercase;
-  z-index: 999;
+  width: 70%;
   color: #ffffff;
 }
 .homeNewProductParagraph {
@@ -56,11 +57,11 @@
   font-size: 15px;
   line-height: 25px;
   /* or 167% */
-
+  width: 50%;
   text-align: center;
 
   color: #ffffff;
-
+  width: 70%;
   mix-blend-mode: normal;
   opacity: 0.75;
 }
@@ -70,6 +71,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
   margin-left: 24px;
   margin-right: 24px;
   padding-bottom: 50px;
@@ -108,71 +110,35 @@
   mix-blend-mode: normal;
   opacity: 0.75;
 }
-.homeZx7Speaker {
-  position: relative;
-  padding-top: 101px;
-  margin: 24px;
-
-  padding-bottom: 24px;
-}
-.homeZx7SpeakerImg {
-  position: absolute;
-
-  width: 100%;
-  top: 0;
-  z-index: -999;
-}
-.homeZx7SpeakerTablet {
+.homeNewProductTablet {
   display: none;
-}
-.homeYx1Earphone {
-  display: flex;
-  flex-direction: column;
-
-  padding-left: 24px;
-  padding-right: 24px;
-}
-.homeYx1EarphoneImg {
-  width: 100%;
-  height: 100%;
-  margin-top: 60px;
-}
-.homeYx1EarphoneBackground {
-  background: #f1f1f1;
-  margin-top: 24px;
-  padding-top: 41px;
-  padding-left: 24px;
-  padding-bottom: 41px;
 }
 
 @media (min-width: 768px) {
-  .homeNewProductImgTablet {
-    position: absolute;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    display: block;
-    object-fit: fill;
-
-    width: 100%;
-    filter: contrast(180%);
-    z-index: -999;
-  }
   .homeNewProductImg {
     display: none;
+    /* object-fit: fill; */
   }
-  .homeNewProductImgDesktop {
+  .homeNewProductTablet {
+    display: block;
+    width: 100%;
+    height: 720px;
+    position: absolute;
+    z-index: -999;
+  }
+  .homeNewProductDesktop {
     display: none;
-  }
-  .homeNewProduct {
-    padding: 126px 186px 120px 186px;
-    margin-bottom: 100px;
   }
   .homeOrangeProduct {
     padding: 52px 169px 64px 171px;
+    margin-right: 103px;
+    margin-left: 96px;
   }
   .homeOrangeProductImg {
     width: 197px;
+  }
+  .homeNavCont {
+    margin-top: 150px;
   }
   .homeOrangeProductHeader {
     font-style: normal;
@@ -187,118 +153,31 @@
 
     color: #ffffff;
   }
-
-  .homeZx7Speaker {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 38px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-    color: #000000;
-  }
-  .homeZx7SpeakerHeader {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-left: 63px;
-    color: #000000;
-    padding-right: 0;
-  }
-  .homeZx7SpeakerButton {
-    margin-left: 63px;
-  }
-  .homeZx7SpeakerImg {
-    display: none;
-  }
-  .homeZx7SpeakerTablet {
-    display: block;
-    position: absolute;
-    top: 0;
-    z-index: -888;
-    width: 100%;
-  }
-
-  .homeYx1Earphone {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-top: 45px;
-  }
-  .homeYx1EarphoneImg {
-    width: 50%;
-    margin-right: 11px;
-    border-radius: 10px;
-    height: 300px;
-  }
-  .homeYx1EarphoneBackground {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    border-radius: 10px;
-    text-align: left;
-    width: auto;
-    margin-top: 64px;
-    height: 220px;
-  }
-  .homeYx1EarphoneHeader {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding-right: 53px;
-    color: #000000;
-  }
 }
 
 @media (min-width: 1440px) {
-  .homeNewProduct {
-    padding: 0;
-
-    top: 20%;
-
-    padding-left: 0;
-    justify-content: center;
-
-    align-items: start;
-    text-align: start;
+  .homeNewProductInfo {
+    display: flex;
+    align-items: center;
+    margin-right: 600px;
   }
-  .homeNewProductImgDesktop {
+  .homeNewProductDesktop {
     display: block;
-    position: absolute;
+    width: 100%;
     z-index: -999;
+    position: absolute;
   }
   .homeNewProductImg {
     display: none;
   }
-  .homeNewProductImgTablet {
+  .homeNewProductTablet {
     display: none;
-  }
-  .homeNewPoductTitle {
-    text-align: center;
-  }
-  .homeNewProductParagraph {
-    width: 40%;
-    text-align: left;
-    margin-bottom: 40px;
-  }
-  .homeZx7SpeakerImg {
-    width: 410px;
   }
   .homeOrangeProduct {
     padding-bottom: 0;
     display: flex;
     flex-direction: row;
+    margin-left: 96px;
   }
   .homeOrangeProductImg {
     width: 100%;
@@ -331,21 +210,5 @@
 
     mix-blend-mode: normal;
     opacity: 0.75;
-  }
-  .homeZx7SpeakerTablet {
-    height: 320px;
-    object-fit: cover;
-  }
-  .homeYx1Earphone {
-    flex-wrap: nowrap;
-  }
-  .homeYx1EarphoneImg {
-    width: 45%;
-    height: 345px;
-    margin-right: 30px;
-  }
-  .homeYx1EarphoneBackground {
-    width: 45%;
-    height: 270px;
   }
 }

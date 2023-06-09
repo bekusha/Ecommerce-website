@@ -8,15 +8,15 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <div className="navigationContainer">
-      <Link to={"allproducts/Headphones"}>
+      <Link to={"/allproducts/Headphones"}>
         {" "}
         <Category img={headphone} header={"HEADPHONES"} />
       </Link>
-      <Link to={"allproducts/Speakers"}>
+      <Link to={"/allproducts/Speakers"}>
         {" "}
         <Category img={speaker} header={"SPEAKERS"} />
       </Link>
-      <Link to={"allproducts/Earphones"}>
+      <Link to={"/allproducts/Earphones"}>
         {" "}
         <Category img={earphone} header={"EARPHONE"} />
       </Link>

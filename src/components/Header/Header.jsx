@@ -28,11 +28,38 @@ const Header = () => {
   return (
     <>
       <div className="headerContainer">
-        <img onClick={handleShowNav} className="nav" src={navi} width={20} />
+        <img
+          onClick={handleShowNav}
+          className="nav"
+          src={navi}
+          width={20}
+          alt=""
+        />
         <Link to={"/"}>
           {" "}
-          <img className="logo" src={logo} />
+          <img className="logo" src={logo} alt="" />
         </Link>
+        <ul className="navBarTop">
+          <Link to={"/"}>
+            {" "}
+            <li className="navBarInner">Home</li>
+          </Link>
+
+          <Link to={"/allproducts/Headphones"}>
+            {" "}
+            <li className="navBarInner">HEADPHONES</li>
+          </Link>
+
+          <Link to={"/allproducts/Speakers"}>
+            {" "}
+            <li className="navBarInner">SPEAKERS</li>
+          </Link>
+
+          <Link to={"/allproducts/Earphones"}>
+            {" "}
+            <li className="navBarInner">EARPHONES</li>
+          </Link>
+        </ul>
         <img onClick={handleShowCart} src={basket} className="basket" />
         <div onClick={handleShowNav} className={nav ? "navOpen" : "navOff"}>
           <Navigation />

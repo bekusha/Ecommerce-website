@@ -7,8 +7,6 @@ import Button from "../Button/Button";
 const AlsoLike = () => {
   const data = useContext(AppContext);
   const products = data.products;
-  console.log(products);
-  console.log(products);
 
   return (
     <>
@@ -20,7 +18,7 @@ const AlsoLike = () => {
               <img className="alsoLikeImg" src={product.img} />
             </div>
 
-            <div className="alsoLikeTitle">{product.title}</div>
+            <div className="alsoLikeTitle">Product</div>
             <Button title="SEE PRODUCT" background="#D87D4A" width={160} />
           </div>
         );

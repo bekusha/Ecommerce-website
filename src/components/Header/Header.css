@@ -2,6 +2,12 @@ body {
   padding: 0;
   margin: 0;
 }
+.nav:hover {
+  cursor: pointer;
+}
+.basket:hover {
+  cursor: pointer;
+}
 .headerContainer {
   background-color: black;
   display: flex;
@@ -15,7 +21,7 @@ body {
   margin-left: 24px;
   margin-right: 24px;
   top: 70px;
-  z-index: 999;
+  z-index: 1500;
   width: 80%;
   height: 488px;
   border-radius: 8px;
@@ -33,6 +39,9 @@ body {
   margin-top: 32px;
 }
 .cartRemoveButton:hover {
+  cursor: pointer;
+}
+.cartRemoveButton:hover {
   color: red;
 }
 .navOff {
@@ -41,8 +50,30 @@ body {
 .navOpen {
   position: absolute;
   background-color: white;
-  width: 100%;
-  z-index: 999;
+  top: 100%;
+
+  z-index: 1000;
   border-radius: 10px;
-  box-shadow: 5px 10px 8px 10px #888888;
+}
+.navBarTop {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .headerContainer {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+  .logo {
+    margin-top: 27px;
+  }
+
+  .navBarTop {
+    display: flex;
+    list-style-type: none;
+
+    gap: 50px;
+  }
 }

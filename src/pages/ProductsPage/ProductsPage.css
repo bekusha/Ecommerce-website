@@ -47,7 +47,6 @@ img {
 }
 .productsPageCalculatorContainer {
   display: flex;
-  justify-content: space-around;
 
   gap: 16px;
 }
@@ -99,7 +98,10 @@ img {
   flex-direction: column;
   gap: 20px;
 }
-.productsPageFirstSize {
+.productsPageFirsSize {
+  width: 100%;
+}
+.productsPageSecondSize {
   width: 100%;
 }
 
@@ -109,7 +111,7 @@ img {
     flex-direction: row;
   }
   .productsPageImg {
-    width: 40%;
+    width: 30%;
   }
   .productsPageHeading {
     margin-left: 69px;
@@ -117,14 +119,13 @@ img {
   }
   .productsPageParagraph {
     margin-left: 69px;
-    margin-right: 34px;
+    margin-right: 50px;
   }
   .productsPageCalculatorContainer {
-    justify-content: flex-end;
+    margin-left: 69px;
   }
   .productsPagePrice {
-    display: flex;
-    justify-content: flex-end;
+    margin-left: 69px;
   }
   .productsPageList {
     display: flex;
@@ -150,24 +151,22 @@ img {
   .productsPageImagesContainer {
     display: flex;
     flex-direction: row;
-    gap: 0;
+    padding: 0;
   }
   .productsPageFirsSize {
-    object-fit: contain;
-    width: 80%;
+    object-fit: cover;
+    width: 70%;
+    height: 35%;
   }
   .productsPageSecondSize {
     object-fit: none;
-    height: 368px;
   }
   .productsPageSecondSize {
     width: 50%;
   }
   .productsPageAlsoLike {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     flex-wrap: wrap;
+    gap: 10px;
   }
 }

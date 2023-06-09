@@ -16,6 +16,9 @@
   display: flex;
   justify-content: center;
 }
+.footerLogo:hover {
+  cursor: pointer;
+}
 
 .navBar {
   color: white;
@@ -37,6 +40,10 @@
   text-transform: uppercase;
 
   color: #ffffff;
+}
+.navBarInner:hover {
+  border-bottom: solid 0.2px;
+  transition: 0.3s;
 }
 .footerParagraph {
   font-style: normal;
