@@ -127,6 +127,7 @@
     z-index: -999;
     object-fit: none;
     background: black;
+    filter: contrast(150%);
   }
   .homeNewProductDesktop {
     display: none;

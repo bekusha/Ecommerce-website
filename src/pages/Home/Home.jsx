@@ -65,6 +65,21 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      {/* <div className="homeZx7Speaker">
+        <img
+          className="homeZx7SpeakerImg"
+          src="https://res.cloudinary.com/dffpo6zsc/image/upload/v1686148095/mark2/image-speaker-zx7_gsea9s.jpg"
+        />
+        <div className="homeZx7SpeakerInfo">
+          <h1 className="homeZx7SpeakerTitle">ZX7 SPEAKER</h1>
+          <Button
+            background={"transparent"}
+            border={"solid"}
+            width={160}
+            title={"SEE PRODUCT"}
+          />
+        </div>
+      </div> */}
 
       <AboveFooter />
     </div>
