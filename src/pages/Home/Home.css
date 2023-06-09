@@ -133,8 +133,9 @@
   }
   .homeOrangeProduct {
     padding: 52px 169px 64px 171px;
-    margin-right: 103px;
-    margin-left: 96px;
+    margin-right: 200px;
+    margin-left: 200px;
+    border-radius: 8px;
   }
   .homeOrangeProductImg {
     width: 197px;
