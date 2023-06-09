@@ -125,6 +125,8 @@
     height: 720px;
     position: absolute;
     z-index: -999;
+    object-fit: none;
+    background: black;
   }
   .homeNewProductDesktop {
     display: none;

@@ -29,6 +29,7 @@ const Home = () => {
           className="homeNewProductDesktop"
           alt=""
         />
+
         <div className="homeNewProductInfo">
           <div className="homeNewProductTitle">NEW PRODUCT</div>
           <h1 className="homeNewProductHeader">XX99 Mark II HeadphoneS</h1>
