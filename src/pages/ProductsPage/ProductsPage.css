@@ -50,6 +50,9 @@ img {
 
   gap: 16px;
 }
+.productsPageCalculatorContainer:hover {
+  cursor: pointer;
+}
 .productsPagePlusMinus {
   display: flex;
   gap: 20px;
