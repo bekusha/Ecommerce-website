@@ -137,7 +137,7 @@
   align-items: flex-start;
   justify-content: center;
   margin-top: 40px;
-  margin-right: 80px;
+  margin-right: 100px;
 }
 @media (min-width: 768px) {
   .homeNewProductImg {
@@ -181,6 +181,9 @@
     text-transform: uppercase;
 
     color: #ffffff;
+  }
+  .homeZx7SpeakerInfo {
+    margin-right: 220px;
   }
 }
 
