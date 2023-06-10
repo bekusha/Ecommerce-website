@@ -3,6 +3,7 @@ import "./AlsoLike.css";
 import { AppContext } from "../../main";
 import { useContext } from "react";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const AlsoLike = () => {
   const data = useContext(AppContext);
@@ -17,9 +18,11 @@ const AlsoLike = () => {
               {" "}
               <img className="alsoLikeImg" src={product.img} />
             </div>
-
             <div className="alsoLikeTitle">Product</div>
-            <Button title="SEE PRODUCT" background="#D87D4A" width={160} />
+            <Link to={`/product/${product.id}`}>
+              {" "}
+              <Button title="SEE PRODUCT" background="#D87D4A" width={160} />
+            </Link>
           </div>
         );
       })}

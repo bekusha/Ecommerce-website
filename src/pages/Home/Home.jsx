@@ -9,6 +9,7 @@ import { useContext } from "react";
 import { AppContext } from "../../main";
 const Home = () => {
   const { products } = useContext(AppContext);
+
   const product = products.map((product) => product);
 
   return (
@@ -65,21 +66,25 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      {/* <div className="homeZx7Speaker">
+      <div className="homeZx7Speaker">
         <img
           className="homeZx7SpeakerImg"
           src="https://res.cloudinary.com/dffpo6zsc/image/upload/v1686148095/mark2/image-speaker-zx7_gsea9s.jpg"
         />
         <div className="homeZx7SpeakerInfo">
           <h1 className="homeZx7SpeakerTitle">ZX7 SPEAKER</h1>
-          <Button
-            background={"transparent"}
-            border={"solid"}
-            width={160}
-            title={"SEE PRODUCT"}
-          />
+          <Link to={`/product/${product[4].id}`}>
+            {" "}
+            <Button
+              background={"transparent"}
+              border={"solid black"}
+              width={160}
+              title={"SEE PRODUCT"}
+              color={"black"}
+            />
+          </Link>
         </div>
-      </div> */}
+      </div>
 
       <AboveFooter />
     </div>

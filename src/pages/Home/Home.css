@@ -16,6 +16,8 @@
   width: 100%;
   height: 600px;
   z-index: -2;
+  object-fit: contain;
+  background-color: black;
 }
 .homeNewProductInfo {
   z-index: 999;
@@ -78,6 +80,7 @@
   color: white;
   padding-left: 24px;
   padding-right: 24px;
+  border-radius: 8px;
 }
 .homeOrangeProductImg {
   width: 150px;
@@ -113,7 +116,29 @@
 .homeNewProductTablet {
   display: none;
 }
-
+.homeZx7Speaker {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  height: 320px;
+}
+.homeZx7SpeakerImg {
+  position: absolute;
+  max-width: 85%;
+  object-fit: none;
+  height: 100%;
+  z-index: -999;
+}
+.homeZx7SpeakerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 40px;
+  margin-right: 80px;
+}
 @media (min-width: 768px) {
   .homeNewProductImg {
     display: none;
@@ -134,8 +159,8 @@
   }
   .homeOrangeProduct {
     padding: 52px 169px 64px 171px;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
     border-radius: 8px;
   }
   .homeOrangeProductImg {

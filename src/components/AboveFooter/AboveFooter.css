@@ -7,9 +7,9 @@
   padding: 24px;
 }
 .aboveFooterImg {
-  width: 100%;
   border-radius: 10px;
   margin-bottom: 40px;
+  max-width: 100%;
 }
 .aboveFooterImgDesktop {
   display: none;
@@ -62,6 +62,7 @@
     margin-left: 80px;
     margin-right: 80px;
   }
+
   .aboveFooterHeader {
     margin-left: 90px;
     margin-right: 90px;
@@ -84,5 +85,15 @@
   }
   .aboveFooterImgDesktop {
     display: block;
+  }
+  .aboveFooterContainer {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .aboveFooterInfoContainer {
+    display: flex;
+    flex-direction: column;
   }
 }
