@@ -66,12 +66,12 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className="homeZx7Speaker">
+      {/* <div className="homeZx7Speaker">
         <img
           className="homeZx7SpeakerImg"
           src="https://res.cloudinary.com/dffpo6zsc/image/upload/v1686148095/mark2/image-speaker-zx7_gsea9s.jpg"
         />
-        {/* <div className="homeZx7SpeakerInfo">
+        <div className="homeZx7SpeakerInfo">
           <h1 className="homeZx7SpeakerTitle">ZX7 SPEAKER</h1>
           <Link to={`/product/${product[4].id}`}>
             {" "}
@@ -83,8 +83,8 @@ const Home = () => {
               color={"black"}
             />
           </Link>
-        </div> */}
-      </div>
+        </div>
+      </div> */}
 
       <AboveFooter />
     </div>
