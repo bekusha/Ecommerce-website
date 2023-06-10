@@ -16,4 +16,6 @@
 }
 .buttonContainer:hover {
   cursor: pointer;
+  background: gray;
+  color: white;
 }
