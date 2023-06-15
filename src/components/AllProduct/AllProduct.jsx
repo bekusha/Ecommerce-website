@@ -6,21 +6,24 @@ import AboveFooter from "../AboveFooter/AboveFooter";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
-
+import { useEffect } from "react";
 const EachProduct = () => {
-  const { products } = useContext(AppContext);
+  const { backData } = useContext(AppContext);
   const { category } = useParams();
 
-  console.log(category);
+  useEffect(() => {
+    window.scroll(0, 0);
+    console.log("Hello");
+  }, []);
 
-  const filteredProducts = products.filter(
+  const filteredProducts = backData.filter(
     (product) => product.category.toLowerCase() === category.toLowerCase()
   );
-
+  console.log(filteredProducts);
   return (
-    <div>
+    <>
       {filteredProducts.map((product) => (
-        <div className="eachProductContainer" key={product.id}>
+        <div className="eachProductContainer" key={product._id}>
           <img
             className="eachProductImg"
             src={product.img}
@@ -31,7 +34,7 @@ const EachProduct = () => {
               <h1 className="eachProductTitle">{product.title}</h1>
               <p className="eachProductParagraph">{product.description}</p>
               <div className="eachProductButtonContainer">
-                <Link to={`/product/${product.id}`}>
+                <Link to={`/product/${product._id}`}>
                   <Button
                     width={160}
                     background={"#D87D4A"}
@@ -43,9 +46,9 @@ const EachProduct = () => {
           </div>
         </div>
       ))}
-      <Navigation />a
+      <Navigation />
       <AboveFooter />
-    </div>
+    </>
   );
 };
 

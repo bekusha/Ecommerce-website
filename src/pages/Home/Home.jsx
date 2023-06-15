@@ -7,10 +7,12 @@ import AboveFooter from "../../components/AboveFooter/AboveFooter";
 import zx9 from "./zx9.svg";
 import { useContext } from "react";
 import { AppContext } from "../../main";
-const Home = () => {
-  const { products } = useContext(AppContext);
 
-  const product = products.map((product) => product);
+const Home = () => {
+  const { backData } = useContext(AppContext);
+
+  const product = backData.map((product) => product);
+  console.log(product);
 
   return (
     <div className="homeContainer">
@@ -38,7 +40,7 @@ const Home = () => {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <Link to={`/product/${product[0].id}`}>
+          <Link to={`/product/${product.length && product[0]._id}`}>
             {" "}
             <Button title={"SEE PRODUCT"} width={160} background={"#D87D4A"} />
           </Link>
@@ -51,9 +53,13 @@ const Home = () => {
         <img className="homeOrangeProductImg" src={zx9} alt="" />
 
         <div className="homeOrangeProductInfoContainer">
-          <h1 className="homeOrangeProductHeader">{product[3].title}</h1>
-          <p className="homeOrangeProductParagraph">{product[3].description}</p>
-          <Link to={`/product/${product[3].id}`}>
+          <h1 className="homeOrangeProductHeader">
+            {product.length && product[3].title}
+          </h1>
+          <p className="homeOrangeProductParagraph">
+            {product.length && product[3].description}
+          </p>
+          <Link to={`/product/${product.length && product[3].id}`}>
             {" "}
             <div style={{ display: "flex", justifyContent: "center" }}>
               <Button
@@ -66,25 +72,6 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      {/* <div className="homeZx7Speaker">
-        <img
-          className="homeZx7SpeakerImg"
-          src="https://res.cloudinary.com/dffpo6zsc/image/upload/v1686148095/mark2/image-speaker-zx7_gsea9s.jpg"
-        />
-        <div className="homeZx7SpeakerInfo">
-          <h1 className="homeZx7SpeakerTitle">ZX7 SPEAKER</h1>
-          <Link to={`/product/${product[4].id}`}>
-            {" "}
-            <Button
-              background={"transparent"}
-              border={"solid black"}
-              width={160}
-              title={"SEE PRODUCT"}
-              color={"black"}
-            />
-          </Link>
-        </div>
-      </div> */}
 
       <AboveFooter />
     </div>

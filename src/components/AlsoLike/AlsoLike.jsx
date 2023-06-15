@@ -6,26 +6,26 @@ import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 
 const AlsoLike = () => {
-  const data = useContext(AppContext);
-  const products = data.products;
+  const { backData } = useContext(AppContext);
 
   return (
     <>
-      {products.map((product) => {
-        return (
-          <div key={product.id} className="alsoLikeContainer">
-            <div className="alsoLikeImgContainer">
-              {" "}
-              <img className="alsoLikeImg" src={product.img} />
+      {backData &&
+        backData.map((product) => {
+          return (
+            <div key={product._id} className="alsoLikeContainer">
+              <div className="alsoLikeImgContainer">
+                {" "}
+                <img className="alsoLikeImg" src={product.img} />
+              </div>
+              <div className="alsoLikeTitle">Product</div>
+              <Link to={`/product/${product.id}`}>
+                {" "}
+                <Button title="SEE PRODUCT" background="#D87D4A" width={160} />
+              </Link>
             </div>
-            <div className="alsoLikeTitle">Product</div>
-            <Link to={`/product/${product.id}`}>
-              {" "}
-              <Button title="SEE PRODUCT" background="#D87D4A" width={160} />
-            </Link>
-          </div>
-        );
-      })}
+          );
+        })}
     </>
   );
 };

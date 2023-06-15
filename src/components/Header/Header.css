@@ -58,6 +58,9 @@ body {
 .navBarTop {
   display: none;
 }
+.navBarInner:hover {
+  color: #d87d4a;
+}
 
 @media (min-width: 1440px) {
   .headerContainer {
