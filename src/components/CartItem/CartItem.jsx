@@ -4,7 +4,8 @@ import { AppContext } from "../../main";
 import { useContext } from "react";
 
 const CartItem = () => {
-  const { cartItems } = useContext(AppContext);
+  const { cartItems, backData } = useContext(AppContext);
+  console.log(backData);
 
   const handleIncrement = () => {
     products.setQuantity(products.quantity + 1);

@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useEffect } from "react";
 import "./ProductsPage.css";
 import { AppContext } from "../../main";
 import Button from "../../components/Button/Button";
@@ -11,6 +12,10 @@ const ProductsPage = () => {
   const { cartItems, setCartItems, quantity, setQuantity, backData } =
     useContext(AppContext);
 
+  useEffect(() => {
+    window.scroll(0, 0);
+    console.log("Hello");
+  }, []);
   const product = backData.find((product) => product._id === productId);
   const handleDecrement = () => {
     if (quantity !== 1) {

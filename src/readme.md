@@ -29,12 +29,12 @@ A web application built with React for an ecommerce website. It allows users to 
 
 ## Demo
 
-A live demo of the project can be accessed [here](https://your-demo-link.com).
+A live demo of the project can be accessed [here](https://resilient-phoenix-287c89.netlify.app/).
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 1](src/assets/Screenshot 2023-06-16 at 19.31.24.png)
+
 
 
 
@@ -50,3 +50,4 @@ A live demo of the project can be accessed [here](https://your-demo-link.com).
 - [React](https://reactjs.org)
 - [React Router](https://reactrouter.com)
 - [Context API](https://reactjs.org/docs/context.html)
+-[MongoDB]

@@ -6,6 +6,7 @@ import Navigation from "../../components/Navigation/Navigation";
 import AboveFooter from "../../components/AboveFooter/AboveFooter";
 import zx9 from "./zx9.svg";
 import { useContext } from "react";
+import { useEffect } from "react";
 import { AppContext } from "../../main";
 
 const Home = () => {
@@ -13,7 +14,10 @@ const Home = () => {
 
   const product = backData.map((product) => product);
   console.log(product);
-
+  useEffect(() => {
+    window.scroll(0, 0);
+    console.log("Hello");
+  }, []);
   return (
     <div className="homeContainer">
       <div className="homeNewProduct">
