@@ -20,7 +20,6 @@ const Header = () => {
 
   const handleShowCart = () => {
     setShowCart(!showCart);
-    console.log(showCart);
   };
   const handleShowNav = () => {
     setNav(!nav);

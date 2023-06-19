@@ -55,6 +55,10 @@
   mix-blend-mode: normal;
   opacity: 0.25;
 }
+
+.cartItemMinus:hover {
+  cursor: pointer;
+}
 .cartItemQuantity {
   font-style: normal;
   font-weight: 700;

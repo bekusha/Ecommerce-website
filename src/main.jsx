@@ -22,15 +22,12 @@ const Main = (props) => {
   console.log(backData);
 
   const [cartItems, setCartItems] = useState([]);
-  const [quantity, setQuantity] = useState(1);
 
   return (
     <AppContext.Provider
       value={{
         cartItems,
         setCartItems,
-        quantity,
-        setQuantity,
 
         backData,
       }}

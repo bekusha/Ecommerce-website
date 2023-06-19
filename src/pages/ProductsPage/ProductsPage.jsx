@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useEffect } from "react";
 import "./ProductsPage.css";
 import { AppContext } from "../../main";
@@ -8,36 +8,30 @@ import Navigation from "../../components/Navigation/Navigation";
 import AlsoLike from "../../components/AlsoLike/AlsoLike";
 const ProductsPage = () => {
   const { productId } = useParams();
-  console.log(productId);
+
   const { cartItems, setCartItems, quantity, setQuantity, backData } =
     useContext(AppContext);
-
+  console.log(backData);
   useEffect(() => {
     window.scroll(0, 0);
-    console.log("Hello");
   }, []);
+
   const product = backData.find((product) => product._id === productId);
-  const handleDecrement = () => {
-    if (quantity !== 1) {
-      setQuantity(quantity - 1);
-    }
-  };
-  const handleIncrement = () => {
-    setQuantity(quantity + 1);
-  };
+
   const handleAddToCart = (id) => {
     const alreadyInCart = cartItems.find((item) => item._id === product.id);
     const newItem = {
-      id: product.id,
+      id: product._id,
       title: product.title,
       price: product.price,
       img: product.img,
-      quantity: quantity,
+      quantity: product.quantity,
     };
+
     if (alreadyInCart) {
       setCartItems(
         cartItems.map((item) => {
-          if (item.id === id) {
+          if (item._id === id) {
             item.quantity + 1;
           }
           return item;
@@ -47,7 +41,6 @@ const ProductsPage = () => {
     }
     setCartItems([...cartItems, newItem]);
   };
-  console.log(product);
 
   return (
     <>
@@ -62,19 +55,13 @@ const ProductsPage = () => {
             <div>
               <h1 className="productsPageHeading">{product.title}</h1>
               <p className="productsPageParagraph">{product.description}</p>
-              <div className="productsPagePrice">
-                ${product.price * quantity}
-              </div>
+              <div className="productsPagePrice">${product.price}</div>
               <div className="productsPageCalculatorContainer">
-                <div className="productsPagePlusMinus">
-                  <div onClick={handleDecrement} className="productsPageMinus">
-                    -
-                  </div>
-                  <div className="productsPageQuantity">{quantity}</div>
-                  <div onClick={handleIncrement} className="productsPagePlus">
-                    +
-                  </div>
-                </div>
+                {/* <div className="productsPagePlusMinus">
+                  <div className="productsPageMinus">-</div>
+                  <div className="productsPageQuantity">{product.quantity}</div>
+                  <div className="productsPagePlus">+</div>
+                </div> */}
                 <div onClick={() => handleAddToCart(product.id)}>
                   {" "}
                   <Button

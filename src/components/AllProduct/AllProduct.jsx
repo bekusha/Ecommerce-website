@@ -13,13 +13,12 @@ const EachProduct = () => {
 
   useEffect(() => {
     window.scroll(0, 0);
-    console.log("Hello");
   }, []);
 
   const filteredProducts = backData.filter(
     (product) => product.category.toLowerCase() === category.toLowerCase()
   );
-  console.log(filteredProducts);
+
   return (
     <>
       {filteredProducts.map((product) => (
