@@ -89,3 +89,7 @@
   mix-blend-mode: normal;
   opacity: 0.25;
 }
+
+.cartItemPlus:hover {
+  cursor: pointer;
+}

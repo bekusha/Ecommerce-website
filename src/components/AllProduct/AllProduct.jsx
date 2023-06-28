@@ -10,14 +10,13 @@ import { useEffect } from "react";
 const EachProduct = () => {
   const { backData } = useContext(AppContext);
   const { category } = useParams();
+  console.log(backData);
 
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
 
-  const filteredProducts = backData.filter(
-    (product) => product.category.toLowerCase() === category.toLowerCase()
-  );
+  const filteredProducts = backData.filter((product) => category === category);
 
   return (
     <>

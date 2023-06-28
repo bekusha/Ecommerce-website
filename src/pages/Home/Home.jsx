@@ -53,29 +53,6 @@ const Home = () => {
       <div className="homeNavCont">
         <Navigation />
       </div>
-      <div className="homeOrangeProduct">
-        <img className="homeOrangeProductImg" src={zx9} alt="" />
-
-        <div className="homeOrangeProductInfoContainer">
-          <h1 className="homeOrangeProductHeader">
-            {product.length && product[3].title}
-          </h1>
-          <p className="homeOrangeProductParagraph">
-            {product.length && product[3].description}
-          </p>
-          <Link to={`/product/${product.length && product[3].id}`}>
-            {" "}
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <Button
-                background={"black"}
-                color={"white"}
-                title={"SEE PRODUCT"}
-                width={160}
-              />
-            </div>
-          </Link>
-        </div>
-      </div>
 
       <AboveFooter />
     </div>

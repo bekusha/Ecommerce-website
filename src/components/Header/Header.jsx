@@ -21,6 +21,10 @@ const Header = () => {
   const handleShowCart = () => {
     setShowCart(!showCart);
   };
+  const handleCloseCart = () => {
+    setShowCart(!showCart);
+    console.log(showCart);
+  };
   const handleShowNav = () => {
     setNav(!nav);
   };
@@ -69,6 +73,14 @@ const Header = () => {
             <div className="cartQuantity">
               CART({products.cartItems.length})
             </div>
+            <button
+              className="closeCartButton"
+              onClick={() => {
+                handleCloseCart();
+              }}
+            >
+              X
+            </button>
             <div className="cartRemoveButton" onClick={handleRemoveCartItems}>
               Remove all
             </div>
