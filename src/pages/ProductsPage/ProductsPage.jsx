@@ -119,9 +119,7 @@ const ProductsPage = () => {
             />
           </div>
           <h1>YOU MAY ALSO LIKE</h1>
-          <div className="productsPageAlsoLike">
-            <AlsoLike />
-          </div>
+          <div className="productsPageAlsoLike"></div>
           <Navigation />
         </div>
       )}
